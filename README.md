@@ -1,3 +1,7 @@
+#laomu for armabi
+> 在处理reactAndroi过程中，发现 现在提供的
+`  compile 'org.webkit:android-jsc:r174650'` 的aar里，是没有arm架构的jsc.so的，而实际项目中又必须使用，所以fork了项目，利用buck进行重新编译。
+
 # JSC build scripts for Android
 
 This repository contains scripts for building the JSC library for Android. The build scripts bundle JSC as a shared library into an [Android AAR](http://tools.android.com/tech-docs/new-build-system/aar-format) file, which makes it easy to use it in Android projects built with [Buck](https://buckbuild.com) or [Gradle](https://gradle.org).
